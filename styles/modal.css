@@ -1,0 +1,46 @@
+.modal-one {background: linear-gradient(#141e30, #243b55)}
+
+.modal-form-conteiner {margin:0 auto;
+    background: rgba(0,0,0,.5);
+    box-shadow: 0 15px 25px rgba(0,0,0,.6);
+    border-radius: 10px;
+    width: 60%;
+    padding: 20px;}
+
+   .close-btn {
+    position: absolute;
+    right: 23%;
+    padding: 0;
+    background: none;
+    font-size: 20px;
+    font-weight: 100;
+    color: #808080;
+    cursor: pointer;
+    margin: 0;
+    border: none;
+}
+@media (min-width:600px) 
+{
+    .modal-form-conteiner {
+        padding: 30px 40px ;}
+    
+}
+
+@media (min-width:800px) 
+{
+    .modal-form-conteiner {
+        padding: 50px;}
+    
+}
+@media (min-width:1470px) {
+    .close-btn {right: 23%;}}
+@media (min-width:1550px) {
+    .close-btn {right: 25%;}}
+@media (min-width:1654px) {
+    .close-btn {right: 27%;}}
+@media (min-width:1754px) {
+    .close-btn {right: 29%;}}
+@media (min-width:1854px) {
+    .close-btn {right: 31%;}}
+@media (min-width:1954px) {
+    .close-btn {right: 33%;}}
