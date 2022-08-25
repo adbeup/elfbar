@@ -302,12 +302,13 @@ transition-duration: 200ms;}
       }
 
       @media (min-width:800px) {
-        .shop_blok {width: 800px;}
+        .shop_blok {width: 760px;}
         .form_media {display: flex;}
-        .for_media_first {width: 50%;}
+        .for_media_first {width: 100%;}
         .second_title {font-size: 20px;
           text-align: start;
         margin-left: 30px;}
+
       .litle_title {font-size: 15px;
           text-align: start;
           margin-left: 30px;}

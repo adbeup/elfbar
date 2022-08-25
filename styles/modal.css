@@ -1,11 +1,70 @@
-.modal-one {background: linear-gradient(#141e30, #243b55)}
+.modal-one {
+    background: linear-gradient(#141e30d6, #243b55);
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    overflow: hidden;
+    z-index: 100;
+    opacity: 0;
+   visibility: hidden;
+}
+@keyframes opacity {
+    
+    0% {
+        visibility:visible;
+        opacity: 0;
+    }
+    25% {
+        opacity: .25;
+    }
+    50% {
+        opacity: .5;
+    }
+    75% {
+        opacity: .75;
+    }
+    100% {
+        opacity: 1;
+    }
+  }
+ 
+.modal-active{
+    animation: opacity .5s linear ;
 
-.modal-form-conteiner {margin:0 auto;
-    background: rgba(0,0,0,.5);
-    box-shadow: 0 15px 25px rgba(0,0,0,.6);
+}
+
+.modal_text {color: #ffffff;
+    text-align: center;
+    margin-bottom: 16px;}
+    
+    .close-btn {position: absolute;
+        right: 20px;
+        padding: 0;
+        background: none;
+        font-size: 20px;
+        color: #ffffff;
+        cursor: pointer;
+        margin: 0;
+        border: none;
+        }
+
+.modal-form-conteiner {
+   margin: 0 auto;
+    background: rgba(0,0,0,.7);;
+    box-shadow: 0 15px 25px rgb(0 0 0 / 60%);
     border-radius: 10px;
     width: 60%;
-    padding: 20px;}
+    padding: 20px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    height: 300px;
+    position: absolute;
+    z-index: 200;
+}
 
    .close-btn {
     position: absolute;

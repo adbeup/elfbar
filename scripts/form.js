@@ -8,15 +8,16 @@ const openFormModalBtn = document.querySelector('#open-form-modal-btn');
 const launchBtn = document.querySelector('#launch-btn');
 const closeBtns = document.querySelectorAll('.close-btn');
 
-openFormModalBtn.addEventListener('click', () => {
-    formModal.classList.add(MODAL_ACTIVE_CLASS_NAME);
-})
+// openFormModalBtn.addEventListener('click', () => {
+//     formModal.classList.add(MODAL_ACTIVE_CLASS_NAME);
+// })
 
 const closeFormModal = () => {
     formModal.classList.remove(MODAL_ACTIVE_CLASS_NAME);
 };
 
 const closeSuccessModal = () => {
+    console.log(1)
     successModal.classList.remove(MODAL_ACTIVE_CLASS_NAME);
 };
 
@@ -64,14 +65,15 @@ form.addEventListener('submit', e => {
       body: new URLSearchParams(formData).toString(),
     })
       .then(() => {
-        showGooseAnim();
+        openSuccessModal()
+        // showGooseAnim();
 
-        setTimeout(() => {
-            closeFormModal();
-            setTimeout(openSuccessModal, 700);
-            setTimeout(closeSuccessModal, 4000);
-            clearFormFields();
-        }, 4000);
+        // setTimeout(() => {
+        //     closeFormModal();
+        //     setTimeout(openSuccessModal, 700);
+        //     setTimeout(closeSuccessModal, 4000);
+        //     clearFormFields();
+        // }, 4000);
       })
       .catch((error) => console.log('Sending form failed'));
 })
